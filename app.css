@@ -1,0 +1,76 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-full {
+    width: 100%;
+}
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+
+    border-right: 2px solid #ccc;
+    width: calc(50% - 2px);
+    height: 100%;
+    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    /* removes the decorations */
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+}
+
+.placeholder {
+    margin: .8em 0 0 .5em;
+    font-size: .8rem;
+    position: relative;
+    color: #757575;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#html-output {
+    width: 50%;
+    margin-left: 50%;
+}
+
+h1, h2, h3 {
+    padding: 1rem;
+}
+
+p {
+    padding-left: 1em;
+}
+
+pre {
+    padding-left: 2em;
+    background-color: #e9e9e9
+}
+
+blockquote p {
+    position: relative;
+    font-family: 'Sanchez', serif;
+    font-style: italic;
+    margin-left: 2em;
+}

@@ -6,22 +6,20 @@
     <title>rahmu's Markdown Viewer</title>
     <meta name="description" content="Turn Markdown documents into HTML">
     <meta name="author" content="Joe H. Rahme">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="mviewer.css">
+    <link rel="stylesheet" href="app.css">
   </head>
 
   <body>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-	<a class="nav-link active" href="#" id="markdown-link">Markdown</a>
-      </li>
-      <li class="nav-item">
-	<a class="nav-link active" href="#" id="html-link">HTML</a>
-      </li>
-    </ul>
-    <main class="container">
-      <textarea placeholder="Insert your markdown here, then click the buttons on the top right" id="markdown-text" name="markdown-text" cols="100" rows="70"></textarea>
-      <div id="html-output" style="display: none">
+
+    <main class="container-full">
+      <textarea
+          placeholder="Insert your markdown here"
+          id="markdown-text"
+          name="markdown-text"></textarea>
+      <div id="html-output">
+          <p class="placeholder">Output will render here</p>
       </div>
     </main><!-- /.container -->
 
@@ -29,6 +27,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-    <script src="mviewer.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
