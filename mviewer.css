@@ -25,3 +25,10 @@ pre {
     padding-left: 2em;
     background-color: #e9e9e9
 }
+
+blockquote p {
+    position: relative;
+    font-family: 'Sanchez', serif;
+    font-style: italic;
+    margin-left: 2em;
+ }
