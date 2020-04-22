@@ -7,6 +7,9 @@ var converter = new showdown.Converter({
 window.onload = function () {
   var mdownArea = document.getElementById("markdown-text")
   var htmlArea = document.getElementById('html-output')
+
+  mdownArea.focus();
+
   document.getElementById('html-link').onclick = function generateHTML(e) {
     e.preventDefault();
     text = mdownArea.value;
