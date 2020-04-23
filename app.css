@@ -5,10 +5,6 @@ html,body {
     height: 100%;
 }
 
-.container-full {
-    width: 100%;
-}
-
 label,
 textarea {
     font-size: .8rem;
@@ -48,11 +44,6 @@ textarea {
 label {
     display: block;
     margin-bottom: 10px;
-}
-
-#html-output {
-    width: 50%;
-    margin-left: 50%;
 }
 
 h1, h2, h3 {

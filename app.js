@@ -10,7 +10,9 @@ window.onload = function () {
     var output = document.getElementById('html-output');
 
     textarea.oninput = (e) => {
-        output.innerHTML = converter.makeHtml(textarea.value);
+      output.innerHTML = converter.makeHtml(textarea.value);
+      textarea.style.display = "none";
+      textarea.parentElement.classList.remove("col");
     }
 
     textarea.focus();
